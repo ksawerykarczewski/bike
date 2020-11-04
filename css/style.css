@@ -11,15 +11,15 @@ body,html{
 }
 /*----------------------------------------------font import*/
 @font-face{
-    src: url(/bike/fonts/Montserrat-Light.ttf);
+    src: url(fonts/Montserrat-Light.ttf);
     font-family: 'Montserrat-Light';
 }
 @font-face{
-    src: url(/bike/fonts/Oswald-Light.ttf);
+    src: url(fonts/Oswald-Light.ttf);
     font-family: 'Oswald-Light';
 }
 @font-face{
-    src: url(/bike/fonts/Oswald-Medium.ttf);
+    src: url(fonts/Oswald-Medium.ttf);
     font-family: 'Oswald-Medium';
 }
 /*----------------------------------------------Global style*/
