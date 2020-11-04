@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="Biking">
+    <meta name="author" content="Team 10">
+    <link rel="apple-touch-icon" sizes="57x57" href="/bike/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/bike/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/bike/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/bike/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/bike/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/bike/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/bike/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/bike/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/bike/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/bike/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/bike/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/bike/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/bike/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Bike Your Way &verbar; a bike guide through Copenhagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/bike/css/style.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+    <div id="overlay">
+        <div id="preloader">
+            <img src="/bike/img/Logo_color.svg" alt="logo" />
+            <img id="gearInner" src="/bike/img/gear_inner_large.png" alt="inner gear" />
+        </div>
+        <p id="welcomeTxt">Plan your perfect bike route and explore the great city of Copenhagen.</p>
+    </div>
+    <script>
+        var overlay = document.getElementById("overlay");
+
+        window.addEventListener('load', function () {
+            overlay.style.display = 'none';
+
+        })
+    </script>
+    <nav><img id="logoType" src="/bike/img/bikeYourWay_logoType.svg" alt="Bike Your Way" />
+        <a href="/bike/index.html">
+            <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <title>logo_favicon</title>
+                <g>
+                    <rect x="0.49" width="499.02" height="500" rx="72.84" ry="72.84" class="logoBG" />
+                    <path
+                        d="M423.43,22.55c-2.86-16.81-31.14-37.75-47.28-35-4.57.78-7.84,2.72-11.27,6.7-17.58,19.75-39.24,51-58.36,78.58-9.94,14.35-19.33,27.89-27.57,39-20.89,28.77-58.23,74.41-82.28,95.19,3.75-20.56,17.67-59.11,36.6-94.62C259.34,62.22,268.93,57.41,270,57a8.11,8.11,0,0,1,2.5.46c1.22.38,4.46,1.38,7.23-1A6.66,6.66,0,0,0,281.76,50c-1.39-8.2-8.29-17.58-18.46-25.1s-21-11.24-28.81-9.9a17.58,17.58,0,0,0-10.89,6.79c-13.49,15.24-32,45.35-45.19,73.4-23.88,48.6-45.76,111.27-41.38,137.06,1.28,7.53,6.87,15.3,15.35,21.32,6.14,4.36,15.23,8.58,22.35,7.37l5-.85.56-.21c22.05-8.44,55.79-50.73,90.45-99.08-40.57,89-72.48,189.83-87.55,246.51l0,.14c-.91,3.76-1.85,7.54-2.79,11.33-5.48,22.11-10.67,43-9.68,58.21.14,8.28,6.66,24.87,18.3,33.72a27.25,27.25,0,0,0,24.23,5.16c4.42-.8,7.59-2.52,9.42-5.11l1-1.43.1-1.74c1.41-24.63,52.36-151,121.31-228.14l1.95-2.18-.49-2.89c-.77-4.51-4.65-8.78-10.33-7.82l-.91.16-.82.41c-12.82,6.5-53,56.1-86.69,108.9,28.62-81.22,70.41-192.44,95.79-237.92,4.8-8.48,9.55-17,14.14-25.29,14-25.22,27.25-49,41.42-70,6.73-10.21,11.28-13,12.31-13.22h0a8.8,8.8,0,0,1,2.35.46c1.55.45,4.8,1.38,7.58-1.11A6.78,6.78,0,0,0,423.43,22.55Z"
+                        class="logoLetter" />
+                </g>
+            </svg>
+        </a>
+        <ul id="menu">
+            <li><a href="/bike/subpages/level.html">
+                    <svg id="icon" data-name="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 119">
+                        <title>icon</title>
+                        <circle class="cls-1" cx="59.22" cy="59.22" r="58.22" />
+                        <circle class="cls-1" cx="32.21" cy="71.51" r="17.12" />
+                        <circle class="cls-1" cx="87.3" cy="71.51" r="17.12" />
+                        <polyline class="cls-1" points="56.85 71.51 45.35 46.98 78.43 46.93" />
+                        <path class="cls-1"
+                            d="M44.88,48.21l-.12,5.72s4.07-.39,7.34-1.1L57,61.17,43.85,85.71H68.5L88.92,62.9,99,87.06,90.07,60V49.09H81.83s-3.55,0-4.12-2.88"
+                            transform="translate(-11.65 -14.19)" />
+                        <path class="cls-1" d="M61,50.81s.79-1.13-.2-1.7-16.92-.24-16.92-.24"
+                            transform="translate(-11.65 -14.19)" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <header>
+        <video controls preload="auto">
+            <source src="video/bike.mp4" type="video/mp4">
+        </video>
+        <section>
+            <h1>Enjoy freedom, Bike Your Way</h1>
+            <p>Plan your perfect bike route and explore the great city of Copenhagen.</p>
+            <p>Ready to see Copenhagen by bike?</p>
+            <a class="choose" href="/bike/subpages/level.html">Choose your routes</a>
+        </section>
+    </header>
+    <main>
+        <section class="bikeOffers">
+
+            <h2>Don't have a bike? We got you covered!</h2>
+            <p>Here you can see prices for our rental shops all around Copenhagen, starting from 30 minutes to 7 days.
+            </p>
+            <section class="bikePriceContainer">
+                <h3>up to 24 hours rental</h3>
+                <ul class="prices">
+                    <li>30 minutes<span class="split">12.5 DKK</span></li>
+                    <li>2 hours<span class="split">50 DKK</span></li>
+                    <li>6 hours<span class="split">70 DKK</span></li>
+                    <li>12 hours<span class="split">85 DKK</span></li>
+                    <li>24 Hours (Best in price)<span class="split">100 DKK</span></li>
+                </ul>
+            </section>
+            <section class="bikePriceContainer">
+                <h3>from 2 days rental</h3>
+                <ul class="prices">
+                    <li>2 days<span class="split">180 DKK</span></li>
+                    <li>3 days<span class="split">240 DKK</span></li>
+                    <li>4 days<span class="split">290 DKK</span></li>
+                    <li>5 days<span class="split">340 DDK</span></li>
+                    <li>6 days<span class="split">380 DDK</span></li>
+                    <li>7 days (Best in price)<span class="split">420 DKK</span></li>
+                </ul>
+            </section>
+        </section>
+        <h2>Top 10 rules for cyclists</h2>
+        <!--Slide show-->
+        <div class="slideshow-container">
+
+            <!-- images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">#01</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules.jpg">
+                    <!--change to medium files after 415px-->
+                    <img src="/bike/img/rules_mobile.jpg" alt="text" />
+                </picture>
+                <div class="text">Keep right at all times</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#02</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules2.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules2.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile2.jpg" alt="text" />
+                </picture>
+                <div class="text">Raise your hand up high before you stop </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#03</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules3.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules3.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile3.jpg" alt="text" />
+                </picture>
+                <div class="text">Give hand signals to the left or right before turning</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#04</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules4.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules4.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile4.jpg" alt="text" />
+                </picture>
+                <div class="text">Watch over your left shoulder before overtaking cyclists</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#05</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules5.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules5.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile5.jpg" alt="text" />
+                </picture>
+                <div class="text">Always overtake other cyclists on the left </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#06</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules6.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules6.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile6.jpg" alt="text" />
+                </picture>
+                <div class="text">Do not ride against the traffic flow or on sidewalks/pavements, pedestrian crossings
+                    or pedestrian streets </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#07</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules7.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules7.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile7.jpg" alt="text" />
+                </picture>
+                <div class="text">Cycling is not allowed in parks in central Copenhagen </div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#08</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules8.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules8.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile8.jpg" alt="text" />
+                </picture>
+                <div class="text">To turn left at an intersection you must first cross to the opposite right corner of
+                    the intersection where you stop and wait for the traffic light to change before continuing</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#09</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules9.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules9.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile9.jpg" alt="text" />
+                </picture>
+                <div class="text">A short ring on the bell is often a signal that a cyclist wants to pass – so please
+                    keep to the right</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">#10</div>
+                <picture>
+                    <source media="(min-width: 900px)" srcset="/bike/img/rules10.jpg">
+                    <!--change to biggest files after 901px-->
+                    <source media="(min-width: 768px)" srcset="/bike/img/rules10.jpg">
+                    <!--change to medium files after 451px-->
+                    <img src="/bike/img/rules_mobile10.jpg" alt="text" />
+                </picture>
+                <div class="text">From dusk to dawn, bicycles must be equipped with bicycle lights front and rear</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+        <!--Slide end-->
+    </main>
+    <footer>
+        <h2>Where to rent</h2>
+        <p>No matter how long you need a bike, we have locations all over Copenhagen.</p>
+        <p>Here you can choose your rental
+        </p>
+        <iframe id="rentMap"
+            src="https://www.google.com/maps/d/embed?mid=1BLbgHAmBZsKQLkhuGrxx2DzI_yZx4ZIS&ll=55.6794616665365%2C12.601183096873456&z=13"></iframe>
+
+        <p>Ready to see Copenhagen by bike?</p>
+        <a class="choose" href="/bike/subpages/level.html">Choose your routes</a>
+        <p>&copy; Team 10, 2018</p>
+    </footer>
+</body>
+
+</html>

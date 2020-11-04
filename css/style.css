@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------------font import*/
+@font-face{
+    src: url(/bike/fonts/Montserrat-Light.ttf);
+    font-family: 'Montserrat-Light';
+}
+@font-face{
+    src: url(/bike/fonts/Oswald-Light.ttf);
+    font-family: 'Oswald-Light';
+}
+@font-face{
+    src: url(/bike/fonts/Oswald-Medium.ttf);
+    font-family: 'Oswald-Medium';
+}
+/*----------------------------------------------Global style*/
+.numbertext,a,form a{
+    font-family: 'Oswald-Medium';
+}
+h1,h2,h3,.numbertext,ul,#welcomeTxt{
+    font-family: 'Oswald-Light';
+}
+h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+}
+h2,h3,.numbertext{
+    font-size: 3.3rem;
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+}
+h1,h2,h3{
+    color: #eb4454;
+}
+p,.text{
+    font-family: 'Montserrat-Light';
+}
+p{
+    font-size: 1.6rem;
+    margin: 0 5% 1.6rem 5%;
+}
+nav{
+    text-align: right;
+}
+nav,footer{
+    width: 100%;
+    height: auto;
+    background: #EB4454;
+    padding: 1.5rem;
+}
+main{
+    width:100%;
+}
+/*----------------------------------------------Maps*/
+#tourMap{
+    height: calc(100% - 8rem);
+    width: 100%;
+    border: none;
+}
+/*----------------------------------------------Level selector*/
+form{
+        height: calc(100% - 8rem);
+      display: block;
+  position: relative;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+    width: 100%;
+  font-size: 2.2rem;
+}
+form a{
+    text-decoration: none;
+}
+/*----------------------------------------------preloader*/
+#overlay{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+}
+.no-js #overlay {
+    display: none;
+}
+#preloader{
+    width: 50%;
+    position: absolute;
+    height: auto;
+    top: 25%;
+    left: 25%;
+    z-index: 1000;
+}
+#welcomeTxt{
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    left: 5%;
+    right: 5%;
+    width: auto;
+    color: #EB4454;
+}
+#gearOuter,#gearMiddel,#gearInner{
+    position: absolute;
+    width: 100%;
+}
+/*#gearOuter{    
+    -webkit-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+    opacity: 0.8;
+}
+#gearMiddel{
+    -webkit-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}*/
+#gearInner{    
+    -webkit-animation:spin 10s linear infinite;
+    animation:spin 10s linear infinite;
+    opacity: 0.4;
+}
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+/*----------------------------------------------Navigation*/
+#menu{
+    float: right;
+    list-style: none;
+    text-align: right;
+}
+#menu li{
+    display: inline-block;
+    width: 6.6rem;
+    height: auto;
+}
+#icon{
+    width: 6rem;
+    vertical-align: top;
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+        #icon:hover{
+            stroke: #000;
+        }
+    /*----------------------------------------------Logo*/
+#logo{ 
+    width: 5rem; 
+    height:auto;
+    display: inline-block;    
+    margin: 0.5rem 0 0 0;
+}
+.logoBG{ 
+    fill: #ffffff;
+}
+.logoLetter{ 
+    fill: #eb4454;
+}
+.logoBG:hover{
+    fill: black;
+}
+#logoType{
+    height: 6.5rem;
+    width: auto;
+    float: left;
+}
+/*----------------------------------------------header*/
+header{
+    text-align: center;
+}
+/*----------------------------------------------Video*/
+video{
+    width: 100%;
+    height: auto;
+}
+/*----------------------------------------------Levels*/
+.container {
+    display: block;
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.container p{
+    text-align: left;
+    margin: 0 0 1.6rem 0;
+}
+.container h2{
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-top: -2rem;
+    
+}
+/*----------------------------------------------choose button*/
+.choose, .choose:visited{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 3rem;
+    padding: 2rem 2rem;
+    margin: 0 0 1.6rem 0;
+}
+.choose:hover{
+   color: #eb4454;
+    background-color: black;
+}
+/*----------------------------------------------slide show*/
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+    .mySlides img{
+        width: 100%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -2.2rem;
+  padding: 1.6rem;
+  color: #eb4454;
+  font-weight: bold;
+  font-size: 4rem;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  background-color:#EB4454;
+  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  bottom: 0.8rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #EB4454;
+  font-size: 2rem;
+  padding: 0.8rem 1.2rem;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #eb4454;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*----------------------------------------------prices*/
+.bikeOffers, .bikeOffers h2,.bikeOffers h3{
+    background-color: #eb4454;
+    color: white;
+}
+.bikeOffers{
+    padding: 0 5% 3rem 5%;
+    display: block;
+}
+    .bikeOffers p{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .bikeOffers h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+        padding: 4rem 0 1rem 0;
+    }
+.prices{max-width: 100%;margin:auto;list-style: none;}
+.prices li{
+    border-bottom: 1px dotted #fff;
+    font-size: 2rem;
+    margin: 0 0 0.5rem 0;
+}
+.split{
+    float: right;
+}
+.prices li,.split{
+        font-size: 2rem;
+        font-family: 'Montserrat-Light';
+}
+/*----------------------------------------------rent map*/
+#rentMap{
+    width: 100%;
+    height: 50rem;
+}
+/*----------------------------------------------footer*/
+footer{
+    text-align: center;
+    color: white;
+    margin: 3rem 0 0 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+    footer h2{
+        color: white;
+        margin-top: 1rem;
+    }
+    footer iframe{
+        margin: 0 0 2rem 0;
+    }
+/*----------------------------------------------Media*/
+@media (min-width: 768px)/*Tablet size*/{
+    .bikePriceContainer{
+        display: inline-block;
+        width: 45%;
+        margin-right: 5%;
+        vertical-align: top;
+    }
+        .bikePriceContainer:last-of-type{
+            margin-right: 0;
+        }
+        .bikeOffers h3 {
+            margin-top: 0;
+        }
+    .prices li, .split {
+        font-size: 1.8rem;
+        font-family: 'Montserrat-Light';
+    }
+    .container {
+        display: inline-block;
+        width: 30%;
+        height: auto;
+        text-align: center;
+        margin: 0 0 0 2%;
+        vertical-align: top;
+    }
+    .bikeOffers p{
+        width: 50%;
+        margin: 0 0 0 25%;
+    }
+    header{
+        margin: 3rem 3rem 0 3rem;
+    }
+}
+@media (min-width: 1024px)/*Big Tablet size*/{
+    header{
+        margin: 3rem 0 0 3rem;
+        padding: 0;
+        text-align: left;
+    }
+    video{
+        display: inline-block;
+        width: 50%;
+    }
+    header section{
+        width: 45%;
+        margin: 0px 0 0 2%;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center
+    }
+    #placement{
+        text-align: center;
+    }
+    .container:first-child {
+        margin: 0;
+    }
+@media (min-width: 1200px)/*Laptop*/{
+    .prices li, .split {
+        font-size: 2.5rem;
+        font-family: Montserrat-Light;
+}
+    }
+    p,.text{
+        font-size: 2rem;
+    }
+    h1{font-size: 8rem;line-height: 8.5rem;
+    }
+    #preloader {
+        width: 20%;
+        top: 12%;
+        left: 40%;
+    }
+    #gearInner {
+    width: 50%;
+    left: 25%;
+}
+    #welcomeTxt {
+    bottom: 5rem;
+    font-size: 4rem;
+}
+@media (min-width: 1500px)/* big Laptop*/{
+    h1{
+        font-size: 12rem;
+        line-height: 12.5rem;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    header section p {
+        font-size: 2.2rem;
+        width: 58%;
+        margin-left: 21%;}
+        #placement {
+        width: 60%;
+        margin: auto;
+    }
+
+    .bikeOffers{
+        padding-left: 15%;
+        padding-right: 15%;
+}
+    @media (min-width: 1760px) /* full screen*/{
+        header section p {
+        font-size: 3.5rem;
+        width: 58%;
+        margin-left: 21%;
+    }
+        #preloader {
+        width: 20%;
+        top: 12%;
+        left: 40%;
+        }
+        #gearInner {
+        width: 50%;
+        left: 25%;
+    }
+        #welcomeTxt {
+        bottom: 5rem;
+        font-size: 4rem;
+}
+}
